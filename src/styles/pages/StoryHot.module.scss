@@ -1,0 +1,18 @@
+.breadcrumb{
+  margin-left: -23px;
+  ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    li{
+      color: var(--color-text-title);
+      margin-top: 10px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .item_title{
+      margin-left: 5px;
+    }
+  }
+}
+

@@ -1,0 +1,68 @@
+@import "../../styles/abstracts/variables";
+
+.suggestSearch {
+  width: 100%;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  z-index: 99999999999;
+  max-height: 375px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid $gray-3;
+  background-color: $gray-0;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    .itemSearch {
+      padding: 5px 0;
+      list-style: none;
+      display: block;
+      border-bottom: 1px solid $gray-3;
+      a {
+        display: flex;
+        padding: 8px;
+        img {
+          margin: 0 5px 0 0;
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+        }
+
+        .titleItem{
+          display: flex ;
+          flex-direction: column;
+          h3 {
+
+            color: $dark-5;
+            font-size: 14px;
+            font-weight: 700;
+            margin-right: 5px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+
+          h4 {
+            color: $dark-5;
+            font-size: 12px;
+            font-weight: 400;
+
+            i {
+              display: block;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+    }
+
+    .itemSearch:hover {
+      background: $gray-3;
+    }
+  }
+}

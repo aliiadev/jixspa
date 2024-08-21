@@ -1,0 +1,230 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.mainNav {
+  z-index: 546456;
+  position: sticky;
+  top:0;
+  background-color: var(--nav-main-background);
+  @include Responsive(DF){
+    display: none;
+  }
+  .mainMenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    .hide{
+      @include Responsive(MN){
+        display: none;
+      }
+    }
+
+    li {
+      border-right: 1px solid var(--border-right);
+      padding: 8px 10px;
+      //border-bottom: 1px solid var(--nav-main-background);
+      cursor: pointer;
+      .topLinkMega {
+        white-space: nowrap;
+        font-size: 14px;
+        color: var(--color-text-app);
+        text-decoration: none;
+        text-transform: uppercase;
+        span {
+          margin-left: 4px;
+        }
+
+      }
+      &:hover{
+        .topLinkMega {
+          color: var(--color-text-hover);
+        }
+      }
+    }
+    .act{
+      background: var(--background-active);
+      .topLinkMega {
+        color: var(--color-logo-home);
+      }
+    }
+  }
+}
+
+.megaMenu {
+  display: none;
+}
+.megaMenuShow {
+  .desShow{
+    display: block;
+  }
+  .desHide{
+    display: none;
+  }
+  @include Responsive(DF){
+    background: black;
+    position: relative;
+    border: none;
+    border-top: 1px solid #eee;
+  }
+  margin-left: -11px;
+  margin-top: 8px;
+  padding: 0;
+  position: absolute;
+  display: block;
+  width: 600px;
+  border: 1px solid #d9d9d9;
+  -moz-box-shadow: 0 3px 8px rgba(3,3,3,0.26);
+  -webkit-box-shadow: 0 3px 8px rgb(3 3 3 / 26%);
+  box-shadow: 0 3px 8px rgb(3 3 3 / 26%);
+  z-index: 2452324;
+  background: white;
+  @include Responsive(DF){
+    width: 100%;
+  }
+  .wrapperChild {
+    width: 25%;
+    @include Responsive(DF){
+      width: 50%;
+    }
+  }
+  li{
+    list-style: none;
+    padding: 10px;
+    .child{
+      padding: 0;
+      a {
+        font-size: 14px;
+        color: #333;
+
+        &:hover {
+          color: #ae4ad9;
+        }
+      }
+      .red{
+        color: red;
+        font-weight: 600;
+        &:hover{
+          color: red;
+        }
+      }
+    }
+  }
+  .tip{
+    text-transform: none;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .separator{
+    border-top: 1px solid #ccc;
+  }
+}
+
+.rank{
+  display: none;
+}
+.rankShow{
+  @include Responsive(DF){
+    width: 100%;
+    background: black;
+    position: relative;
+    border-top: 1px solid white;
+    a {
+      color: #fff;
+    }
+  }
+  display: block;
+  width: 300px;
+  background-color: #fff;
+  margin-left: -11px;
+  margin-top: 8px;
+  padding: 0;
+  position: absolute;
+  z-index: 2000;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+  a{
+    font-size: 14px;
+    width: 49.99999%;
+    float: left;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    display: block;
+    padding: 8px 16px;
+  }
+  .full{
+    color: red !important;
+    font-weight: 600;
+  }
+
+}
+.rankShow a:hover{
+  background: #ff9601;
+  color: #fff !important;
+}
+
+.navShow{
+  width: 100%;
+  display: block;
+  z-index: 999999999;
+  height: 100%;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 50px;
+  background-color: #000;
+
+  @include Responsive(SM){
+    display: none;
+  }
+
+  .search_box{
+    padding: 8px;
+    .input_group{
+      position: relative;
+      border-collapse: separate;
+      .search_input{
+        border-radius: 0;
+        height: 32px;
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+
+      .box_icon{
+        right: 10px;
+        top:7px;
+        position: absolute;
+        .icon{
+          float: right;
+        }
+      }
+    }
+  }
+
+  .module_content{
+    ul{
+      margin: 7.5px -15px;
+      padding: 0;
+      li{
+        padding:10px 0 0 25px;
+        a{
+          text-decoration: none;
+          color: white;
+        }
+      }
+      .act{
+        a{
+          color: #FF9601FF;
+        }
+      }
+    }
+  }
+
+}
+.navHide{
+  display: none;
+}

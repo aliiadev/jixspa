@@ -1,0 +1,144 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.center_side{
+	margin-bottom: 10px;
+	padding: 10px;
+
+	.box_detail{
+		display: block;
+		.title_detail{
+			font-weight: 400;
+			font-size: 21px;
+			text-transform: uppercase;
+			text-align: center;
+			margin: 0;
+			line-height: 1.2;
+			color: var(--color-text-app);
+		}
+		.time_small{
+			line-height: 1;
+			font-size: 13px;
+			font-style: italic;
+			opacity: .7;
+			display: block;
+			text-align: center;
+			padding: 5px 0 10px;
+			color: lightgray;
+		}
+		.detail_info{
+			.col_image{
+				text-align: center;
+				margin-top: 10px;
+				position: relative;
+				min-height: 1px;
+				padding-left: 15px;
+				padding-right: 15px;
+				@include Responsive(MB){
+					text-align: center;
+				}
+			}
+			.col_info{
+				margin-top: 10px;
+				.author{
+					margin: 0 0 7px;
+					color: var(--color-text-detail);
+					.icon{
+						display: flex;
+						align-items: center;
+						gap: 5px;
+					}
+					.cate{
+						a{
+							text-decoration: none;
+							color: var(--color-text-title);
+
+						}:hover{
+							 color: var(--color-button-view-more);
+						 }
+					}
+				}
+				.vote{
+					margin-top: 5px;
+					font-size: 14px;
+					span{
+						text-transform: capitalize;
+						color: var(--color-text-app);
+					}
+					a{
+						color: var(--color-text-title);
+						text-decoration: none;
+						:hover{
+							text-decoration: underline;
+							color: var(--color-button-view-more);
+						}
+					}
+
+				}
+				.rate{
+					margin-bottom: 8px;
+				}
+				.follow{
+					display: flex;
+					gap: 10px;
+					.totalFollow{
+						color: var(--color-text-app);
+					}
+				}
+				.button{
+					display: flex;
+					flex-wrap: wrap;
+					gap: 10px;
+					margin-top: 10px;
+				}
+			}
+		}
+		.content_info{
+			.shortened{
+				max-height: 60px;
+				overflow: hidden;
+				:before{
+					position: absolute;
+					content: '';
+					display: block;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					height: 20px;
+					background: var(--background-desc);
+				}
+			}
+			p{
+				font-size: 14px;
+				color: var(--color-text-app);
+				padding: 0;
+				margin: 0;
+				position: relative;
+				a{
+					text-decoration: none;
+					color: var(--color-text-title);
+
+				}
+				:hover{
+					color: var(--color-button-view-more);
+					text-decoration: underline;
+				}
+			}
+
+
+			.moreLink{
+				font-size: 14px;
+				cursor: pointer;
+				color: var(--color-text-title);
+				span{
+					display: flex;
+					align-items: center;
+				}:hover{
+					 color: var(--color-button-view-more);
+					 text-decoration: underline;
+				 }
+			}
+
+		}
+	}
+}

@@ -1,0 +1,74 @@
+.comicHorizontal {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  .thumb {
+    width: 70px;
+    height: 50px;
+    overflow: hidden;
+    text-transform: capitalize;
+    img {
+      width: 100%;
+      max-width: 100%;
+      //vertical-align: middle;
+    }
+  }
+  .wrapperContent {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6px;
+    width: 100%;
+    .title {
+      font-size: 14px;
+      font-weight: 400;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      .titleText{
+        color: var(--color-text-app);
+        text-decoration: none;
+        text-transform: capitalize;
+      }
+      .titleText:hover{
+        color: var(--color-text-hover);
+      }
+    }
+
+    .title:hover {
+      color: var(--color-text-hover);
+    }
+    .chapter {
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .chapterTitle {
+        font-size: 13px;
+        text-decoration: none;
+        color: var(--color-text-app);
+        text-transform: capitalize;
+      }
+      .chapterTitle:hover {
+        color: var(--color-text-hover);
+      }
+      .time {
+        font-size: 13px;
+        line-height: 20px;
+        font-style: italic;
+        overflow: hidden;
+        white-space: nowrap;
+        color: var(--color-text-app);
+        padding-right: 4px;
+        span{
+          cursor: pointer;
+          svg{
+            path{
+              stroke: var(--color-text-app);
+            }
+          }
+        }
+      }
+    }
+  }
+}

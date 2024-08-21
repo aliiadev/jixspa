@@ -1,0 +1,60 @@
+@import "../../styles/abstracts/variables";
+
+.btn{
+  color: $gray-0;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px;
+  user-select: none;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+}
+.primary {
+  border-color: $indigo-5;
+  background-color: $indigo-4;
+}
+
+.primary:hover {
+  background-color: $indigo-6;
+}
+
+.warning {
+  border-color: $yellow-7;
+  background-color: $yellow-6;
+}
+
+.warning:hover {
+  background-color: $yellow-8;
+}
+.danger {
+  border-color: $red-8;
+  background-color: $red-8;
+}
+
+.danger:hover {
+  background-color: $red-9;
+}
+.secondary {
+  border-color: $green-7;
+  background-color: $green-6;
+}
+
+.secondary:hover {
+  background-color: $green-8;
+}
+.disable{
+  opacity: .3;
+  background-color: $dark-6;
+}
+.disable:hover{
+  opacity: .3;
+  background-color: $dark-6;
+}
+

@@ -1,0 +1,17 @@
+@keyframes text-change {
+  0% {
+    color: intial;
+  }
+  25% {
+    -webkit-text-stroke: #1bc82b 2px;
+  }
+  50% {
+    -webkit-text-stroke: #f06719 2px;
+  }
+  75% {
+    -webkit-text-stroke: #592be7 2px;
+  }
+  100% {
+    -webkit-text-stroke: intial;
+  }
+}

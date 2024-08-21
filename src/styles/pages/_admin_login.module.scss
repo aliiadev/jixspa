@@ -1,0 +1,14 @@
+.main {
+  flex-direction: column;
+  height: 100vh;
+  .mainForm {
+    max-width: 500px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: 8px;
+  }
+}
+

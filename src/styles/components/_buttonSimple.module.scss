@@ -1,0 +1,12 @@
+@import "../../styles/abstracts/variables";
+
+.active{
+  padding: 0 20px;
+  background: $yellow-6;
+  border: 1px solid $dark-8;
+}
+.default{
+  padding: 0 20px;
+  background: none;
+  border: 1px solid $dark-8;
+}

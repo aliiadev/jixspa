@@ -1,0 +1,40 @@
+.display{
+	display: none;
+}
+.pagination{
+	padding-left: 0;
+	margin: 20px 0;
+	border-radius: 4px;
+	display: inline-block;
+
+	li{
+
+		display: inline-block;
+		cursor: pointer;
+		text-align: center;
+		margin: 0 4px;
+		a{
+			color: var(--color-text-paginate);
+			padding: 0 2px;
+			font-size: 15px;
+			border-radius: 0!important;
+			width: 40px;
+			line-height: 35px;
+			position: relative;
+			float: left;
+			text-decoration: none;
+			background-color: var(--back-pagination);
+			border: 1px solid #ddd;
+		}:hover{
+			z-index: 2;
+			color: #23527c;
+			background-color: #eee;
+			border-color: #ddd;
+		}
+	}:focus-visible {
+		border: none !important;
+	}
+
+
+
+}

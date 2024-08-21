@@ -1,0 +1,27 @@
+.items{
+  margin-top: 0;
+  padding: 0;
+  .relative{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    a{
+      border: 1px solid #FF9800;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+    }
+  }
+  //Tiêu đề truyện
+  .page_title{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-text-title);
+    margin-left: 8px;
+  }
+  .container{
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,66 @@
+.boxBarTabComic {
+  border: none;
+  .tabNav {
+    margin: 0;
+    .navItem {
+      cursor: pointer;
+      text-align: center;
+      background: var(--background-hover);
+      border-top: 2px solid var(--background-hover);
+      border-right: 1px solid var(--background-hover);
+      border-left: 1px solid var(--background-hover);
+      height: 42px;
+      .navLink {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: var(--color-text-app);
+        text-align: center;
+        font-size: 15px;
+        line-height: 40px;
+        text-decoration: none;
+      }
+    }
+    .active {
+      cursor: pointer;
+      border-top: 2px solid var(--background-top-rank-active);
+      border-right: 1px solid  #EAEAEA;
+      border-left: 1px solid  #EAEAEA;
+      background: var(--background-main);
+      .navLink {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: var(--color-text-app);
+        text-align: center;
+        font-size: 15px;
+        line-height: 40px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .baxBarContent {
+    background-color: var(--container-background);
+    border: 1px solid #EAEAEA;
+    border-top: none;
+    .top0 {
+      color: #3498db !important;
+    }
+    .top1 {
+      color: #27ae60 !important;
+    }
+    .top2 {
+      color: #d35400 !important;
+    }
+    .txtRank {
+      float: left;
+      line-height: 75px;
+      text-align: center;
+      display: block;
+      color: var(--color-top-rank);
+      font-size: 20px;
+      width: 50px;
+    }
+  }
+}

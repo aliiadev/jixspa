@@ -1,0 +1,107 @@
+@import "../../styles/abstracts/variables";
+
+
+.find {
+  padding: 15px 0;
+  .comicFilter {
+    margin-bottom: 10px;
+
+    p {
+      color: var(--color-text-app);
+      margin: 0;
+      font-size: 25px;
+      font-weight: 400;
+    }
+  }
+
+  .buttonContent {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .advSearch {
+    .note {
+      margin-bottom: 15px;
+
+      .noteIt {
+        margin-bottom: 5px;
+
+        .icon {
+          margin-right: 5px;
+
+          svg {
+            background: $gray-0;
+            box-shadow: 0 1px 3px rgb(0 0 0 / 15%) inset;
+            border: 0.5px solid $dark-5;
+          }
+        }
+
+        .text {
+          color: var(--color-text-app);
+          font-size: 14px;
+        }
+
+        .refresh {
+          float: right;
+        }
+      }
+    }
+
+    .searchMain {
+      margin-bottom: 15px;
+      .label {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--color-text-app);
+      }
+
+      margin-top: 5px;
+    }
+    .selectStatus{
+      margin-bottom: 15px;
+      .selectLabel{
+        margin-top: 5px;
+        label{
+          margin-bottom: 5px;
+          font-weight: 700;
+          color: var(--color-text-app);
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .item{
+
+  }
+}
+@media (min-width: 480px) {
+  .find{
+    .item{
+      width: 33.33333333%;
+      padding: 0 7px;
+    }
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .find{
+    .item{
+      width: 50%;
+      padding: 0 7px;
+    }
+  }
+}
+@media (max-width: 359px) {
+  .find{
+    .item{
+      margin-bottom: 15px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .find{
+    .item{
+      width: 25%;
+      padding: 0 7px;
+    }
+  }
+}

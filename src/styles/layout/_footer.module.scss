@@ -1,0 +1,53 @@
+@import '../base/_animation.scss';
+
+.footer{
+  background: #222;
+  .wrapper_logo {
+    padding: 8px 0;
+    color: white;
+    a {
+      img {
+        width: 150px;
+      }
+    }
+  }
+  .link_footer {
+    padding: 8px 0;
+    color: white;
+    h4 {
+      font-size: 18px;
+      margin: 12px 0;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        margin: 0 4px 0 0;
+        line-height: 38px;
+        list-style: none;
+        display: inline-block;
+        a {
+          font-size: 13px;
+
+          border: solid 1px #ddd;
+          padding: 5px;
+          white-space: nowrap;
+          border-radius: 4px;
+          color: #fff;
+          cursor: pointer;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        :hover {
+         border-color: #fff;
+        }
+      }
+    }
+  }
+  .wrapper_copy {
+    padding: 8px 0;
+    color: #ffffff;
+  }
+}
+

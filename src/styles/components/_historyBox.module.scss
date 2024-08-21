@@ -1,0 +1,78 @@
+.box{
+	border: 1px solid #ddd;
+	color: #333;
+	padding: 10px;
+	clear: right;
+	margin-bottom: 15px;
+	h2{
+		font-size: 16px;
+		margin-bottom: 10px;
+		font-weight: 400;
+		color: var(--color-text-title);
+		.viewAll{
+			float: right;
+			font-size: 13px;
+			line-height: 22px;
+			font-style: italic;
+			color: var(--color-text-app);
+		}:hover{
+			color: var(--color-text-hover);
+			text-decoration: underline;
+	 	}
+	}
+	ul{
+		li{
+			.item{
+				height: 60px;
+			}
+			list-style: none;
+			margin: 0;
+			padding: 10px 0;
+			border-top: 1px solid #dedede;
+			.thumb{
+				overflow: hidden;
+				width: 70px;
+				height: 60px;
+				float: left;
+				margin-right: 10px;
+			}
+			h3{
+				font-size: 14px;
+				font-weight: 400;
+				margin-bottom: 5px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				a{
+					color: var(--color-text-app);
+					text-decoration: none;
+				}:hover{
+					 color: var(--color-text-hover);
+		 		}
+
+			}
+			.chapter{
+				margin: 0;
+				font-size: 13px;
+				font-weight: 500;
+				a{
+					text-decoration: none;
+					color: var(--color-text)
+				}:hover{
+					color: var(--color-text-hover);
+				}
+				.view{
+					display: block;
+					font-style: italic;
+					font-size: 12px;
+					float: right;
+					a{
+						color: var(--color-text-app);
+					}:hover{
+						color: var(--color-text-hover);
+					}
+				}
+			}
+		}
+	}
+}

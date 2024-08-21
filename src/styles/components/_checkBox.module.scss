@@ -1,0 +1,16 @@
+@import "../../styles/abstracts/variables";
+
+.checkBox {
+  font-size: 14px;
+  color: var(--color-text-app);
+  padding: 5px 5px;
+  cursor: pointer;
+  .borderBox {
+    svg {
+      background: $gray-0;
+      box-shadow: 0 1px 3px rgb(0 0 0 / 15%) inset;
+      margin-right: 5px;
+      border: 0.5px solid $dark-1;
+    }
+  }
+}

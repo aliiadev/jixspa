@@ -1,0 +1,48 @@
+.main {
+  .items_slide{
+    position: relative;
+    margin: 0 -7px;
+    height: 240px;
+    .prev{
+      left: 10px;
+      position: absolute;
+      top: 50%;
+      margin-top: -45px;
+      width: 55px;
+      height: 55px;
+      text-align: center;
+      background: url(https://st.nettruyenme.com/Data/Sites/1/skins/comic/images/next_prev.png) no-repeat -3px -33px;
+      color: #fff;
+      text-decoration: none;
+      z-index: 9;
+    }
+    .next{
+      right: 10px;
+      position: absolute;
+      top: 50%;
+      margin-top: -45px;
+      width: 55px;
+      height: 55px;
+      text-align: center;
+      background: url(https://st.nettruyenme.com/Data/Sites/1/skins/comic/images/next_prev.png) no-repeat -3px -33px;
+      color: #fff;
+      text-decoration: none;
+      z-index: 9;
+    }
+  }
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+  h2{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--color-text-title);
+    padding: 8px;
+  }
+  .IconDiv{
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+  }
+}

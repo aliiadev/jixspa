@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --border-right: #ccc;
+  --background-body-main: #ebebeb ;
+  --background-main: #f9f9f9;
+  --color-text-app: #000;
+  --color-text-title: #2980b9;
+  --color-text: #868E96;
+  --nav-main-background: #DEE2E6;
+  --background-hover: #E9ECEF;
+  --background-item-footnote: rgba(0,0,0,.8);
+  --color-text-hover: #288ad6;
+  --color-text-nav: #ff9601;
+  --color-logo-home:#ae4ad9;
+  --color-button-view-more:#ae4ad9;
+  --color-text-megamenu:#FFFFFF;
+  --background-active: white;
+  --color-text-nav-mobile : #fff;
+  --color-text-detail: #777676;
+  --background-desc:linear-gradient(rgba(255,255,255,0),white);
+  --main-background: #EBEBEB;
+  --container-background: #F9F9F9;
+  --background-control: #f6f7f8;
+  --border-bottom-color: #EAEAEA;
+  --color-top-rank: #3b3b3b;
+  --background-top-rank-active: #721799;
+  --background-button_nav : #777676;
+  --color-text-updated: silver;
+  --color-text-name: #03f;
+  --background-comment: #F0F2F5;
+  --color-text-comment: #050505;
+  --back-pagination : #fff;
+  --back-pagination-active: #00a5f0;
+  --border-active-paginate: #4c4c4c;
+  --color-text-paginate: #999;
+
+}
+
+/*Dark mode color*/
+[data-theme='dark'] {
+  --border-right: #424242;
+  --background-body-main: #1a1a1a;
+  --background-main: #2C2E33;
+  --color-text-app: #fff;
+  --color-text-title: #ff9601;
+  --color-text-nav-mobile: #ff9601;
+  --color-text: hsla(0, 0%, 100%, .87);
+  --nav-main-background: #141517;
+  --background-hover: rgba(138, 180, 248, .04);
+  --background-item-footnote: rgba(0,0,0,.8);
+  --color-text-hover: #fd0405;
+  --color-button-view-more: #fd0405;
+  --color-text-nav: #fff;
+  --color-logo-home:#ff9601;
+  --color-text-megamenu:#ae4ad9;
+  --background-active: #000;
+  --color-text-detail : #fff;
+  --background-desc:linear-gradient(rgba(255,255,255,0),#484848);
+  --main-background: #1A1A1A;
+  --container-background: #252525;
+  --background-control: #252525;
+  --border-bottom-color: #EAEAEA;
+  --color-top-rank: #a3a3a3;
+  --background-top-rank-active: #fd0405;
+  --background-button_nav: #111111;
+  --color-text-updated: #999;
+  --color-text-name: #d2d23f;
+  --background-comment: #3A3B3C;
+  --color-text-comment: #E4E6EB;
+  --back-pagination: #3a3a3a;
+  --border-active-paginate: #ff6901;
+  --color-text-paginate: #fff;
+  --back-pagination-active: #3a3a3a;
+}
+

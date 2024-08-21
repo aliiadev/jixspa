@@ -1,0 +1,19 @@
+.box_link{
+	margin-top: 10px;
+	ul{
+		padding-left: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		li{
+			font-size: 14px;
+			a{
+				text-decoration: none;
+				color: var(--color-text-title);
+			}
+			svg{
+				color: var(--color-text-app);
+			}
+		}
+	}
+}

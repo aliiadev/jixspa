@@ -1,0 +1,104 @@
+@import '../abstracts/_variables';
+@import '../abstracts/_mixins';
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 3213213;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: var(--background-main);
+  @include Responsive(DF){
+    position: unset;
+  }
+  .navHeader {
+    a {
+      img {
+        width: 150px;
+      }
+    }
+  }
+  .light_chat{
+    display: flex;
+    gap: 10px;
+    .chat{
+      color: white;
+    }
+  }
+  .display{
+    @include Responsive(DF){
+      display: none;
+    }
+
+  }
+  .responsive_search{
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    cursor: pointer;
+    justify-content: end;
+    gap: 10px;
+    color: white;
+    @include Responsive(XS){
+      width: 100%;
+    }
+
+    .bar{
+      background-color: #d0b32e;
+      border-radius: 2px;
+      cursor: pointer;
+      padding: 3px 5px 0;
+      svg{
+        vertical-align: revert ;
+      }
+    }
+    .iconSearch{
+      @include Responsive(MB){
+        display: none;
+      }
+    }
+    @include Responsive(SM){
+      display: none;
+    }
+    @include Responsive(MD){
+      display: none;
+    }
+    @include Responsive(XL){
+      display: none;
+    }
+  }
+  .wrapperSearch {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    .iconWrapperSearch {
+      color: var(--color-text-app);
+      position: absolute;
+      right: 15px;
+    }
+    .inputSearch {
+      color: var(--color-text-app);
+      padding: 5px 30px;
+      width: 100%;
+      border: none;
+      outline: none;
+      color: var(--color-text-app);
+      background-color: var(--background-main);
+      &:focus::placeholder {
+        color: var(--color-text-hover);
+      }
+
+    }
+    ::placeholder {
+       color: var(--color-text);
+    }
+  }
+}
+.light{
+  color: var(--color-text-nav);
+  font-size: 13px;
+}
